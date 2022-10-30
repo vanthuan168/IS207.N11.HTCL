@@ -237,38 +237,38 @@
     
             if ($(event.target).attr('name') == 'watch-chain-men') {
                 $('.watch-chain-men').css('display', 'flex');
-                $('.tab-overlay').show();
+                // $('.tab-overlay').show();
             } else {
                 $('.watch-chain-men').hide();
-                $('.tab-overlay').hide();
+                // $('.tab-overlay').hide();
 
             }
             //Women
             if ($(event.target).attr('name') == 'watch-list-women') {
                 $('.watch-list-women').css('display', 'flex');
-                $('.tab-overlay').show();
+                // $('.tab-overlay').show();
             } else {
                 $('.watch-list-women').hide();
-                $('.tab-overlay').hide();
+                // $('.tab-overlay').hide();
 
             }
 
             if ($(event.target).attr('name') == 'watch-chain-women') {
                 $('.watch-chain-women').css('display', 'flex');
-                $('.tab-overlay').show();
+                // $('.tab-overlay').show();
             } else {
                 $('.watch-chain-women').hide();
-                $('.tab-overlay').hide();
+                // $('.tab-overlay').hide();
 
             }
     
         })
-        if ($(event.target).attr('name') != 'watch-list-men' && $(event.target).attr('name') != 'watch-chain-men' && $(event.target).attr('name') != 'watch-chain-women' && $(event.target).attr('name') != 'watch-chain-women'){
+        if ($(event.target).attr('name') != 'watch-list-men' && $(event.target).attr('name') != 'watch-chain-men' && $(event.target).attr('name') != 'watch-list-women' && $(event.target).attr('name') != 'watch-chain-women'){
             $(event.target).remove('active')
             $('.watch-list-men').hide();
             $('.watch-chain-men').hide();
 
-            $('.watch-chain-women').hide();
+            $('.watch-list-women').hide();
             $('.watch-chain-women').hide();
             // $('.tab-overlay').hide();
 

@@ -526,6 +526,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .account__header--close{
