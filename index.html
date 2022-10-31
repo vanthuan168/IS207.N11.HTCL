@@ -21,25 +21,29 @@
             <ul class="nav-list nav-list__left">
                 <li class="nav-item nav-item__left">Nam giới
                         <div class="nav-item__product--tab">
-                            <button name="watch-list-men" class="nav-item__product--tab-link" onmouseover="openTab(event, 'watch-list-men')">Đồng hồ</button>
-                            <button name="watch-chain-men"class="nav-item__product--tab-link" onmouseover="openTab(event, 'watch-chain-men')">Dây đồng hồ</button>
+                            <button name="watch-list-men" class="nav-item__product--tab-link">Đồng hồ
+                                <i class="nav-item__product--tab-icon ti-arrow-circle-right"></i>
+                            </button>
+                            <button name="watch-chain-men"class="nav-item__product--tab-link">Dây đồng hồ
+                                <i class="nav-item__product--tab-icon ti-arrow-circle-right"></i>
+                            </button>
                         </div>
 
                         <div class="subnav-product__tabcontent watch-list-men" id="watch-list-men">
                             <a href="" class="watch-item">
-                                <img class="watch-img" src="/assets/img/KASHMIR.png" alt="">
+                                <img class="watch-img" src="/assets/img/men/KASHMIR.png" alt="">
                                 <p class="watch-name">KASHMIR</p>
                             </a>
                             <a href="" class="watch-item">
-                                <img  class="watch-img" src="/assets/img/COLOSSEUM.png" alt="">
+                                <img  class="watch-img" src="/assets/img/men/COLOSSEUM.png" alt="">
                                 <p class="watch-name">COLOSSEUM</p>
                             </a>
                             <a href="" class="watch-item">
-                                <img  class="watch-img" src="/assets/img/WEIMAR.png" alt="">
+                                <img  class="watch-img" src="/assets/img/men/WEIMAR.png" alt="">
                                 <p class="watch-name">WEIMAR</p>
                             </a>
                             <a href="" class="watch-item">
-                                <img  class="watch-img" src="/assets/img/FUTURA.png" alt="">
+                                <img  class="watch-img" src="/assets/img/men/FUTURA.png" alt="">
                                 <p class="watch-name">FUTURA</p>
                             </a>
                             <a href="" class="watch-item watch-name all">Xem tất cả
@@ -49,7 +53,7 @@
                         </div>
                         
                         <div class="subnav-product__tabcontent watch-chain-men" id="watch-chain-men">
-                            <img src="./assets/img/watch-chain-men.jpg" alt="Dây đồng hồ" class="watch-chain--img">
+                            <img src="./assets/img/men/watch-chain-men.jpg" alt="Dây đồng hồ" class="watch-chain--img">
                             <div class="watch-chain--container">
                                 <p class="watch-chain--text">
                                     Từ nay bạn đã có thể biến một thành nhiều chiếc đồng hồ để thay đổi phong cách thời trang của bản thân với dây đồng hồ Curnon.
@@ -64,26 +68,30 @@
                 
                 <li class="nav-item nav-item__left">Nữ giới
                     <div class="nav-item__product--tab">
-                        <button name="watch-list-women" class="nav-item__product--tab-link" onmouseover="openTab(event, 'watch-list-men')">Đồng hồ</button>
-                        <button name="watch-chain-women"class="nav-item__product--tab-link" onmouseover="openTab(event, 'watch-chain-men')">Dây đồng hồ</button>
+                        <button name="watch-list-women" index='0' class="nav-item__product--tab-link">Đồng hồ
+                            <i class="nav-item__product--tab-icon ti-arrow-circle-right"></i>
+                        </button>
+                        <button name="watch-chain-women"index='1' class="nav-item__product--tab-link">Dây đồng hồ
+                            <i class="nav-item__product--tab-icon ti-arrow-circle-right"></i>
+                        </button>
                     </div>
 
                     <div class="subnav-product__tabcontent watch-list-women" >
                         <a href="" class="watch-item">
-                            <img class="watch-img" src="/assets/img/KASHMIR.png" alt="">
-                            <p class="watch-name">KASHMIR</p>
+                            <img class="watch-img" src="/assets/img/women/MELISSANI.png" alt="">
+                            <p class="watch-name">MELISSANI</p>
                         </a>
                         <a href="" class="watch-item">
-                            <img  class="watch-img" src="/assets/img/COLOSSEUM.png" alt="">
-                            <p class="watch-name">COLOSSEUM</p>
+                            <img  class="watch-img" src="/assets/img/women/HAMILTON.png" alt="">
+                            <p class="watch-name">HAMILTON</p>
                         </a>
                         <a href="" class="watch-item">
-                            <img  class="watch-img" src="/assets/img/WEIMAR.png" alt="">
-                            <p class="watch-name">WEIMAR</p>
+                            <img  class="watch-img" src="/assets/img/women/MORAINE.png" alt="">
+                            <p class="watch-name">MORAINE</p>
                         </a>
                         <a href="" class="watch-item">
-                            <img  class="watch-img" src="/assets/img/FUTURA.png" alt="">
-                            <p class="watch-name">FUTURA</p>
+                            <img  class="watch-img" src="/assets/img/women/SANTORINI.png" alt="">
+                            <p class="watch-name">SANTORINI</p>
                         </a>
                         <a href="" class="watch-item watch-name all">Xem tất cả
                             <br>
@@ -92,7 +100,7 @@
                     </div>
 
                     <div class="subnav-product__tabcontent watch-chain-women" id="watch-chain-men">
-                        <img src="./assets/img/watch-chain-women.jpg" alt="Dây đồng hồ" class="watch-chain--img">
+                        <img src="./assets/img/women/watch-chain-women.jpg" alt="Dây đồng hồ" class="watch-chain--img">
                         <div class="watch-chain--container">
                             <p class="watch-chain--text">
                                 Biến một thành nhiều chiếc đồng hồ để thay đổi phong cách thời trang của bản thân với dây đồng hồ Curnon.
@@ -224,54 +232,23 @@
 <script>
     //Navbar hover tab
     $('html').mouseover(function(event){
+        var arr = ["watch-list-men", 'watch-chain-men', 'watch-list-women', 'watch-chain-women'];
+        var i;
         $('.nav-item__product--tab-link').mouseover(function(event){
-            // Men
-            if ($(event.target).attr('name') == 'watch-list-men') {
-                $('.watch-list-men').css('display', 'flex');
-                $('.tab-overlay').show();
-            } else {
-                $('.watch-list-men').hide();
-                $('.tab-overlay').hide();
-
+            for(i = 0; i< arr.length; i++) {
+                if (arr[i] == $(event.target).attr('name')) {
+                    $('.' + arr[i]).css('display', 'flex');
+                } else {
+                    $('.' + arr[i]).hide();
+                }
             }
-    
-            if ($(event.target).attr('name') == 'watch-chain-men') {
-                $('.watch-chain-men').css('display', 'flex');
-                // $('.tab-overlay').show();
-            } else {
-                $('.watch-chain-men').hide();
-                // $('.tab-overlay').hide();
-
-            }
-            //Women
-            if ($(event.target).attr('name') == 'watch-list-women') {
-                $('.watch-list-women').css('display', 'flex');
-                // $('.tab-overlay').show();
-            } else {
-                $('.watch-list-women').hide();
-                // $('.tab-overlay').hide();
-
-            }
-
-            if ($(event.target).attr('name') == 'watch-chain-women') {
-                $('.watch-chain-women').css('display', 'flex');
-                // $('.tab-overlay').show();
-            } else {
-                $('.watch-chain-women').hide();
-                // $('.tab-overlay').hide();
-
-            }
-    
         })
-        if ($(event.target).attr('name') != 'watch-list-men' && $(event.target).attr('name') != 'watch-chain-men' && $(event.target).attr('name') != 'watch-list-women' && $(event.target).attr('name') != 'watch-chain-women'){
-            $(event.target).remove('active')
+        if (jQuery.inArray($(event.target).attr('name'), arr) == -1){
             $('.watch-list-men').hide();
             $('.watch-chain-men').hide();
 
             $('.watch-list-women').hide();
             $('.watch-chain-women').hide();
-            // $('.tab-overlay').hide();
-
         }
     })
     $('.subnav-product__tabcontent').mouseover(function(event){

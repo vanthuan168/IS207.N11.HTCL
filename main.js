@@ -1,17 +1,56 @@
 
-// function openTab(evt, TabName) {
-//   var i, tabcontent, tablinks, temp;
-//   tabcontent = document.getElementsByClassName("subnav-product__tabcontent");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
-//   tablinks = document.getElementsByClassName("nav-item__product--tab-link");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace(" active", "");
-//   }
-  
-//   document.getElementById(TabName).style.display = "flex";
-//   evt.currentTarget.className += " active";
-//   // alert(evt.currentTarget.className)
-// }
+$('html').mouseover(function(event){
+    $('.nav-item__product--tab-link').mouseover(function(event){
+        // Men
+        if ($(event.target).attr('name') == 'watch-list-men') {
+            $('.watch-list-men').css('display', 'flex');
+            $('.tab-overlay').show();
+        } else {
+            $('.watch-list-men').hide();
+            $('.tab-overlay').hide();
+
+        }
+
+        if ($(event.target).attr('name') == 'watch-chain-men') {
+            $('.watch-chain-men').css('display', 'flex');
+            // $('.tab-overlay').show();
+        } else {
+            $('.watch-chain-men').hide();
+            // $('.tab-overlay').hide();
+
+        }
+        //Women
+        if ($(event.target).attr('name') == 'watch-list-women') {
+            $('.watch-list-women').css('display', 'flex');
+            // $('.tab-overlay').show();
+        } else {
+            $('.watch-list-women').hide();
+            // $('.tab-overlay').hide();
+
+        }
+
+        if ($(event.target).attr('name') == 'watch-chain-women') {
+            $('.watch-chain-women').css('display', 'flex');
+            // $('.tab-overlay').show();
+        } else {
+            $('.watch-chain-women').hide();
+            // $('.tab-overlay').hide();
+
+        }
+
+    })
+    if ($(event.target).attr('name') != 'watch-list-men' && $(event.target).attr('name') != 'watch-chain-men' && $(event.target).attr('name') != 'watch-list-women' && $(event.target).attr('name') != 'watch-chain-women'){
+        $(event.target).remove('active')
+        $('.watch-list-men').hide();
+        $('.watch-chain-men').hide();
+
+        $('.watch-list-women').hide();
+        $('.watch-chain-women').hide();
+        // $('.tab-overlay').hide();
+
+    }
+})
+$('.subnav-product__tabcontent').mouseover(function(event){
+    event.stopPropagation();
+})
 

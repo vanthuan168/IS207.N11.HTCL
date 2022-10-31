@@ -67,9 +67,9 @@
     color: var(--text-color);
     font-weight: 400;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    animation: fadeIn 0.3s linear;
+    animation: tranforms 0.3s linear;
 }
-@keyframes fadeIn {
+@keyframes tranforms {
     from {
         transform: translateY(-8px);
         opacity: 0;
@@ -127,6 +127,8 @@
     left: 30px;
     height: 300px;
     border-bottom: #ccc 1px solid;
+    cursor: default;
+    animation: tranforms ease-in 0.3s;
     z-index: 5;
     /* background-color: aquamarine; */
 }
@@ -134,7 +136,7 @@
     top: 380px;
     position: fixed;
     left: 0;
-    right: 0;
+    right: 30px;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
@@ -151,7 +153,9 @@
 }
 
 .nav-item__product--tab-link{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: inherit;
     color: var(--text-color);
     width: 300px;
@@ -169,32 +173,38 @@
 .nav-item__product--tab-link:hover {
     background-color: #ddd;
 }
+
+.nav-item__product--tab-icon {
+    font-size: 1.8rem;
+}
+
 .subnav-product__tabcontent {
     display: flex;
     position: fixed;
     top: 80px;
-    left: 0;
+    left: 330px;
+    right: 30px;
     align-items: center;
     justify-content: space-around;
     padding: 16px 0;
     margin-bottom: 30px;
+    animation: fadeIn ease-in 0.3s;
 }
-/* .subnav-product__tabcontent{
-    float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 70%;
-  border-left: none;
-  height: 300px;
-  display: none;
-} */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
 .watch-list-men,
 .watch-list-women {
     position: fixed;
     height: 300px;
     top: 80px;
-    right: 0;
+    right: 30px;
     left: 330px;
     align-items: center;
     justify-content: space-evenly;
@@ -220,6 +230,8 @@
 }
 .watch-img {
     width: 160px;
+    background-color: rgba(204, 204, 204, 0.4);
+    border-radius: 50%;
 }
 
 .watch-item .watch-name {
@@ -244,7 +256,7 @@
     position: fixed;
     top: 80px;
     left: 330px;
-    right: 0;
+    right: 30px;
     align-items: center;
     justify-content: space-evenly;
     padding-top: 8px;
